@@ -101,8 +101,8 @@ class EvaluateServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('evaluate', __DIR__ . '/../resources/dist/components/evaluate.js'),
-            Css::make('evaluate-styles', __DIR__ . '/../resources/dist/evaluate.css'),
-            Js::make('evaluate-scripts', __DIR__ . '/../resources/dist/evaluate.js'),
+            // Css::make('evaluate-styles', __DIR__ . '/../resources/dist/evaluate.css'),
+            // Js::make('evaluate-scripts', __DIR__ . '/../resources/dist/evaluate.js'),
         ];
     }
 
