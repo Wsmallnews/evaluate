@@ -47,6 +47,7 @@ class EvaluateServiceProvider extends PackageServiceProvider
 
         if (file_exists($package->basePath('/../database/migrations'))) {
             $package->hasMigrations($this->getMigrations());
+            $package->runsMigrations();
         }
 
         if (file_exists($package->basePath('/../resources/lang'))) {
@@ -146,7 +147,7 @@ class EvaluateServiceProvider extends PackageServiceProvider
     protected function getMigrations(): array
     {
         return [
-            'create_evaluate_table',
+            // 'create_evaluate_table',
         ];
     }
 }
